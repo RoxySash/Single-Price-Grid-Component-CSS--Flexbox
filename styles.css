@@ -1,0 +1,265 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--neutral-color-two);
+    font-family: var(--primary-font);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 auto;
+
+   
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+    font-size: 0.856rem;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+    font-size: 1.0rem;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  :root {
+    /* Color variables */
+    --primary-color: hsl(179, 62%, 43%); /* Cyan */
+    --secondary-color: hsl(71, 73%, 54%); /* Bright Yellow */
+    --neutral-color-one: hsl(204, 43%, 93%); /* Light Gray */
+    --neutral-color-two: hsl(217, 44%, 80%); /* Grayish Blue */
+    --primary-color-variant: hsl(179, 62%, 48%); 
+
+    /* Font Variables */
+    --primary-font: 'Karla', serif;
+
+    /* FOnt size */
+
+    --font-size-main: 1rem; /* 16px */
+  }
+
+
+
+  .container {
+    max-width: 300px;
+   
+    
+  }
+
+  .card__one {
+    background-color: var(--neutral-color-one);
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .card__one-title {
+    color: var(--primary-color);
+    padding-bottom: 10px;
+  }
+
+  .card__one-limit {
+    color: var(--secondary-color);
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+  .card__one--description {
+    color: grey;
+  }
+
+  .card__two {
+    background-color: var(--primary-color);
+    padding: 15px;
+    color: var(--neutral-color-one);
+
+  }
+
+  .card__two-title {
+    padding-bottom: 10px;
+
+  }
+
+  .card__two-price {
+    color: rgba(255, 255, 255, 0.633); 
+    
+    
+  }
+
+  .price-amount {
+    color: var(--neutral-color-one);
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding-right: 10px;
+  }
+
+  .card__two-description {
+    padding-bottom: 20px;
+  }
+
+  
+
+  button {
+    background-color: var(--secondary-color);
+    border: none;
+    color: white;
+    min-width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: hsl(71, 64%, 48%);
+  }
+
+  button:active {
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .card__three {
+    background-color: var(--primary-color-variant);
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.633);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .card__three-title {
+    padding-bottom: 10px;
+    color: var(--neutral-color-one);
+  }
+
+  @media (min-width: 900px){
+    body {
+      display: flex;
+      
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0 auto;
+      
+    }
+
+    .container{
+      max-width: 670px;
+    }
+
+    .wrapper__bottom {
+      display: flex;
+      flex-direction: row; 
+    }
+
+    .card__one {
+      padding: 40px;
+    }
+
+    .card__one--description {
+      max-width: 95%;
+    }
+
+    .card__two {
+      width: 50%;
+      padding-top: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
+      border-bottom-left-radius: 5px;
+    }
+
+    .card__two-description {
+      padding-bottom: 25px;
+    }
+
+    .price-amount {
+      font-size: 1.9rem;
+    }
+
+    .card__three {
+      width: 50%;
+      margin: 0;
+      padding: 40px;
+      border-bottom-left-radius: 0;
+    }
+
+  
+
+    body {
+      font-size: 1rem; /* 16px */
+    }
+    
+    .card__one-title {
+      font-size: 1.6rem; /* 32px */
+    }
+    
+    .card__one-limit {
+      font-size: 1.2rem; /* 24px */
+    }
+
+    p {
+      font-size: 1rem;
+    }
+   
+    .card__three-title {
+      font-size: 1.2rem;
+    }
+
+    .card__two-title {
+      font-size: 1.2rem;
+    }
+    .card__three-list {
+      font-size: 0.9rem;
+    }
+
+    button {
+      font-size: 1.0rem; /* 19.2px */
+      padding: 15px;
+      font-weight: bold;
+    }
+
+  }
+
+ 
+  
