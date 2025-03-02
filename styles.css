@@ -13,7 +13,7 @@
     line-height: 1.5;
     /* 4. Improve text rendering */
     -webkit-font-smoothing: antialiased;
-    background-color: var(--neutral-color-two);
+    background-color: hsl(218, 37%, 90%);
     font-family: var(--primary-font);
     
     display: flex;
@@ -64,7 +64,7 @@
     /* Color variables */
     --primary-color: hsl(179, 62%, 43%); /* Cyan */
     --secondary-color: hsl(71, 73%, 54%); /* Bright Yellow */
-    --neutral-color-one: hsl(204, 43%, 93%); /* Light Gray */
+    --neutral-color-one: hsl(202, 38%, 94%); /* Light Gray */
     --neutral-color-two: hsl(217, 44%, 80%); /* Grayish Blue */
     --primary-color-variant: hsl(179, 62%, 48%); 
 
@@ -85,7 +85,7 @@
   }
 
   .card__one {
-    background-color: var(--neutral-color-one);
+    background-color: white;
     padding: 20px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -103,7 +103,7 @@
   }
 
   .card__one--description {
-    color: grey;
+    color: rgb(125, 124, 124);
   }
 
   .card__two {
