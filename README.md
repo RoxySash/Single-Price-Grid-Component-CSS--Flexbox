@@ -27,9 +27,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Mobile View]([image.url](https://github.com/RoxySash/Single-Price-Grid-Component-CSS--Flexbox/blob/e2f59efe54ce1aab712123527f44c47d2f5a1fc6/Screenshot%202025-03-02%20124532.png))
+![Mobile View](https://github.com/RoxySash/Single-Price-Grid-Component-CSS--Flexbox/blob/e2f59efe54ce1aab712123527f44c47d2f5a1fc6/Screenshot%202025-03-02%20124532.png)
 
-Desktop View
+![Desktop View](https://github.com/RoxySash/Single-Price-Grid-Component-CSS--Flexbox/blob/0dcb422a0a560192a3bc2b450df22f569a63ee8f/Screenshot%202025-03-02%20130128.png)
 
 
 
